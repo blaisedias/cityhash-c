@@ -65,6 +65,9 @@ struct _uint128 {
 #define Uint128High64(x)	(x).second
 
 // Hash function for a byte array.
+uint32 CityHash32(const char *s, size_t len);
+
+// Hash function for a byte array.
 uint64 CityHash64(const char *buf, size_t len);
 
 // Hash function for a byte array.  For convenience, a 64-bit seed is also
